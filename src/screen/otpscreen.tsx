@@ -11,7 +11,7 @@ import { s, ScaledSheet, vs } from "react-native-size-matters";
 import OtpInput from "../components/OtpInput";
 import { colors } from "../utility/colors";
 
-const RESEND_SECONDS = 30;
+const RESEND_SECONDS = 60;
 export default function OtpScreen() {
   const [otp, setOtp] = useState<string>("");
   const [timer, setTimer] = useState(RESEND_SECONDS);
